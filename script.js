@@ -1,25 +1,32 @@
-function name() {
-	let Name = prompt("Hiya, what is your name?");
-	alert("Hi there " + Name + "👋");
-	console.log("This person's name is " + Name + ".");
+let myName;
+
+function namey() {
+	myName = prompt("Hiya, what is your name?");
+	alert("Hi there " + myName + "👋");
+	console.log("This person's name is " + myName + ".");
 }
 
+let Animal;
+
 function animal() {
-	let Name = name();
-	let Animal = prompt("What is your spirit animal?");
-	alert("Wow, a " + Animal + ", that tells me a lot about you " + Name + "🐾");
+	Animal = prompt("What is your spirit animal?");
+	alert(
+		"Wow, a " + Animal + ", that tells me a lot about you " + myName + "🐾"
+	);
 	console.log("Their spirit animal is a " + Animal + ".");
 }
 
+let Breakfast;
+
 function breakfast() {
-	let Breakfast = prompt("And tell me, what did you have for breakfast today?");
+	Breakfast = prompt("And tell me, what did you have for breakfast today?");
 	alert(
 		"Yum, " +
 			Breakfast +
 			" sounds like a good breakfast for a " +
 			Animal +
 			" called " +
-			Name +
+			myName +
 			"!😋"
 	);
 	console.log("They had " + Breakfast + " for breakfast.");
@@ -34,7 +41,7 @@ function age() {
 			Animal +
 			"s" +
 			" called " +
-			Name +
+			myName +
 			" deserve " +
 			Breakfast +
 			" for breakfast!😋"
